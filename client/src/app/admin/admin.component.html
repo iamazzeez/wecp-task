@@ -1,1 +1,7 @@
-<p>{{userId}}</p>
+<h3>{{userId}}</h3>
+<div *ngFor="let action of userActions">
+    {{action.timestamp}}
+    {{action.eventType}}
+    {{action.image}}
+</div>
+<!-- <p>{{userActions | json}}</p> -->

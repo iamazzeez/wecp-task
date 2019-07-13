@@ -1,1 +1,3 @@
-<p>user works!</p>
+<div *ngFor="let image of [1,2,3,4,5]">
+    <img (mouseover)="hoverEvent(image)" (click)="clickEvent(image)" src="https://via.placeholder.com/400x400?text=Image+{{image}}">
+</div>
